@@ -17,8 +17,8 @@ export default function Home() {
     <div className="flex justify-center items-center">
     <div className ='break-words justify-center items-center shadow-sm mt-10 border-2 border-grey-500 bg-gray-200'>
     <h1 className='text-center text-2xl font-bold m-2 p-2'>Latest Stories</h1>
-      {data.map((dat)=>
-      <ul className='font-semibold italic m-2 text-center p-2'>
+      {data.map((dat,index)=>
+      <ul key={index} className='font-semibold italic m-2 text-center p-2'>
         <a className='leading-9' href={dat.link}>{dat.title}</a>
         <br></br>
         <p className='text-gray-500'>SEPTEMBER 28, 2022 • 3:12 PM EDT</p>
